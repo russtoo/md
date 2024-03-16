@@ -3,31 +3,150 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-color: rgb(255, 235, 205);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --bg-color: rgb(255, 235, 205);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(#0000));
+  background: var(--bg-color);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+header {
+  position: sticky;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(255, 235, 205);
+  z-index: 99999;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+header span {
+  font-family: monospace;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header nav a {
+  margin-left: 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+main {
+  position: relative; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 1rem;
+}
+
+/* Profile Card */
+
+.profile {
+  display: grid;
+  max-width: max-content;
+  grid-template-areas: 
+    'img text text'
+    'img text text'
+  ;
+  grid-template-columns: 90px 1fr;
+  grid-template-rows: 90px;
+  align-items: center;
+  justify-items: center;
+  border: solid .1rem black;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.profile img {
+  grid-area: img;
+}
+
+.profile div {
+  grid-area: text;
+  margin-top: 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.profile div span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Twitter Card */
+
+.twitter, .spotify {
+  border: solid .1rem black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* Mode Card */
+.mode {
+  display: grid;
+  grid-template-areas: 
+    'icon icon icon'
+    'icon icon icon'
+    'text text text'
+    'time time time'
+  ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-content: center;
+  justify-items: center;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.mode .mode-icon {
+  grid-area: icon;
+  padding: 1rem 1rem 0 1rem;
+
+}
+
+.mode .mode-time {
+  grid-area: time;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.mode .mode-text {
+  grid-area: text;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.spotify {
+  border: solid .1rem black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
 }
