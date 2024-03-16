@@ -4,6 +4,7 @@
 
 :root {
   --bg-color: rgb(255, 235, 205);
+  --text-size: .8rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +35,7 @@ header {
   align-items: center;
   flex-direction: row;
   background-color: rgb(255, 235, 205);
-  z-index: 99999;
+  z-index: 99;
 }
 
 @media screen and (max-width: 600px) {
@@ -52,7 +53,7 @@ header span {
 header nav a {
   margin-left: 1rem;
   font-family: monospace;
-  font-size: 1rem;
+  font-size: var(--text-size);
 }
 
 main {
@@ -80,7 +81,7 @@ main {
   border: solid .1rem black;
   padding: 1rem;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: .5rem;
 }
 
 .profile img {
@@ -89,23 +90,22 @@ main {
 
 .profile div {
   grid-area: text;
-  margin-top: 1rem;
+  margin-top: .5rem;
   font-family: monospace;
-  font-size: 1rem;
+  font-size: var(--text-size) ;
 }
 
 .profile div span {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 /* Twitter Card */
 
-.twitter, .spotify {
+.twitter {
   border: solid .1rem black;
   border-radius: 1rem;
-  margin: 1rem;
-  padding: 1rem;
+  margin: .5rem
 }
 
 /* Mode Card */
@@ -123,7 +123,8 @@ main {
   align-content: center;
   justify-items: center;
   font-family: monospace;
-  font-size: 1rem;
+  font-size: var(--text-size);
+  margin: .5rem;
 }
 
 .mode .mode-icon {
@@ -141,12 +142,12 @@ main {
   grid-area: text;
   padding: 0 1rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .spotify {
   border: solid .1rem black;
   border-radius: 1rem;
-  margin: 1rem;
   padding: 1rem 2rem;
+  margin: .5rem;
 }

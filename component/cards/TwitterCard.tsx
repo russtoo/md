@@ -5,7 +5,7 @@ export default function TwitterCard() {
         <div className="twitter">
             <Suspense fallback={<span>Loading..</span>}>
                 <a className="twitter-timeline" 
-                    data-width="400px"
+                    data-width="300px"
                     data-chrome="transparent noborders noheader noscrollbar nofooter"
                     data-tweet-limit="1"
                     data-aria-polite="assertive"
