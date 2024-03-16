@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <main>
         <ProfileCard />
-        
-        <TwitterCard />
         <SpotifyCard />
         <ModeCard />
+
+        <TwitterCard />
       </main>
       <Footer />
     </>

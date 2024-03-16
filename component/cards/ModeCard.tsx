@@ -12,8 +12,6 @@ export default function ModeCard() {
             sx={{
                 border: 'solid .1rem black',
                 borderRadius: '1rem',
-                margin: '1rem',
-                padding: '1rem',
                 color: 'black'
             }}
         >

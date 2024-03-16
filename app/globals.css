@@ -129,18 +129,11 @@ main {
 
 .mode .mode-icon {
   grid-area: icon;
-  padding: 1rem 1rem 0 1rem;
 
-}
-
-.mode .mode-time {
-  grid-area: time;
-  padding: 0 1rem 1rem 1rem;
 }
 
 .mode .mode-text {
   grid-area: text;
-  padding: 0 1rem;
   font-weight: 700;
   font-size: 1rem;
 }
