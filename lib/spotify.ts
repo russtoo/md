@@ -6,6 +6,12 @@ const basic = btoa(`${client_id}:${client_secret}`);
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
+const params = new URLSearchParams();
+params.append('grant_type', 'refresh_token');
+if (refresh_token) {
+  params.append('refresh_token', refresh_token);
+}
+
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
@@ -13,10 +19,7 @@ const getAccessToken = async () => {
       Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token
-    })
+    body: params.toString(),
   });
 
   return response.json();
