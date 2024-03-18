@@ -12,7 +12,8 @@ export default function ModeCard() {
             sx={{
                 border: 'solid .1rem black',
                 borderRadius: '1rem',
-                color: 'black'
+                color: 'black',
+                padding: '0'
             }}
         >
             <div className="mode">
