@@ -1,6 +1,6 @@
 import { Button } from "@mui/material-next";
 import Image from "next/image";
-import Laptop from "@/public/icb-bg-ing.png";
+import Laptop from "@/public/icb-bg.png";
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 
 

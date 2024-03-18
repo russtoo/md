@@ -4,7 +4,7 @@
 
 :root {
   --bg-color: rgb(255, 235, 205);
-  --text-size: .9rem;
+  --text-size: .8rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,12 +36,6 @@ header {
   flex-direction: row;
   background-color: rgb(255, 235, 205);
   z-index: 99;
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
 }
 
 header span {
@@ -120,7 +114,6 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
-  place-items: center;
   align-content: center;
   justify-items: center;
   font-family: monospace;
