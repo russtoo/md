@@ -1,5 +1,6 @@
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { Button } from '@mui/material-next';
+import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 
 export default function Yap() {
     return (
@@ -17,6 +18,7 @@ export default function Yap() {
                         color: 'black',
                         padding: '1rem'
                     }}
+
                 >
                    <CloseOutlinedIcon /> 
                 </Button>
@@ -31,21 +33,56 @@ export default function Yap() {
                     fontFamily: 'monospace',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    padding: '.5rem'
+                    padding: '1rem'
                 }}
             >
-                <embed 
-                    src="https://ingoscoffeebar.com"
+                <h1
                     style={{
-                        width: '100%',
-                        height: '80vh',
-                        borderRadius: '.5rem',
+                        fontSize: '1.5rem',
+                        fontWeight: '700',
                     }}
-                />
-                <br/>
-                <p>
+                >
+                    Ingos Coffee Bar
+                </h1>
+                <p
+                    style={{
+                        fontSize: '1rem',
+                    }}
+                >A speciality coffee shop website</p>
+                <Button
+                    variant="outlined" 
+                    sx={{
+                        border: 'solid .1rem black',
+                        borderRadius: '.5rem',
+                        color: 'black',
+                        padding: '.5rem 1rem',
+                        margin: '1rem 0',
+                        fontSize: '.8rem',
+                        fontFamily: 'monospace',
+                        backgroundColor: 'rgb(255, 235, 205)'
+                    }}
+                >
+                    ingoscoffeebar.com
+                    <ArrowOutwardOutlinedIcon 
+                        sx={{
+                            fontSize: '1.3rem',
+                            paddingLeft: '.4rem',
+                        }}
+                    />
+                </Button>
+                <p
+                 style={{
+                    maxWidth: '700px'
+                 }}
+                >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
                 </p>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </main>
         </>
     )
