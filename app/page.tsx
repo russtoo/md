@@ -7,6 +7,7 @@ import ProfileCard from "@/component/cards/ProfileCard";
 import SpotifyCard from "@/component/cards/SpotifyCard";
 import ModeCard from "@/component/cards/ModeCard";
 import ICBCard from "@/component/cards/ICBCard";
+import YapCard from "@/component/cards/YapCard";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
         <SpotifyCard />
         <ModeCard />
         <ICBCard />
+        <YapCard />
         <TwitterCard />
       </main>
       <Footer />
