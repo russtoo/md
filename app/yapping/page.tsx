@@ -40,7 +40,7 @@ export default function Yap() {
                         margin: '1rem',
                     }}
                 >
-                    How it started vs. how it's going
+                    How it started vs. how its going
                 </h1>
                 <p
                     style={{
