@@ -1,6 +1,7 @@
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { Button } from '@mui/material-next';
 import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
+import Image from 'next/image';
 
 export default function Yap() {
     return (
@@ -48,7 +49,9 @@ export default function Yap() {
                     style={{
                         fontSize: '1rem',
                     }}
-                >A speciality coffee shop website</p>
+                >
+                    A speciality coffee shop website
+                </p>
                 <Button
                     variant="outlined" 
                     sx={{
@@ -59,6 +62,7 @@ export default function Yap() {
                         margin: '1rem 0',
                         fontSize: '.8rem',
                         fontFamily: 'monospace',
+                        fontWeight: '600',
                         backgroundColor: 'rgb(255, 235, 205)'
                     }}
                 >
@@ -75,14 +79,34 @@ export default function Yap() {
                     maxWidth: '700px'
                  }}
                 >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
                 </p>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className='center-grid'>
+                    <div className='grid'>
+                        {[
+                            {src: '/assets/logo-full.png', alt: '', class: 'one'},
+                            {src: '/assets/image.png', alt: '', class: 'two'},
+                            {src: '/assets/mobile-view.jpg', alt: '', class: 'three'},
+                            {src: '', alt: '', class: 'four'},
+                            {src: '/assets/desktop-view.jpg', alt: '', class: 'five'}
+                        ].map((grid => (
+                            <div className={grid.class}>
+                                <Image 
+                                    src={grid.src}
+                                    alt={grid.alt}
+                                    height={140}
+                                    width={140}
+                                    style={{
+                                        border: 'solid .1rem black',
+                                        borderRadius: '.5rem',
+                                    }}
+                                    priority
+                                />
+                            </div>
+                        )))}
+                    </div>
                 </div>
+                
             </main>
         </>
     )

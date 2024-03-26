@@ -46,7 +46,9 @@ export default function Yap() {
                     style={{
                         fontSize: '1rem'
                     }}
-                >Brief history of my journey</p>
+                >
+                    Brief history of my journey
+                </p>
                 <p
                     style={{
                         border: 'solid .1rem black',

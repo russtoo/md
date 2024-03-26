@@ -1,0 +1,60 @@
+:root {
+    --bg-color: hsl(36deg, 100%, 90%);
+    --color: hsl(36deg, 3%, 6%);
+    --p-size: .8rem;
+    --h2-size: 1rem;
+    --h1-size: 1.5rem;
+    --f-family: 'monospace';
+    --h1-weight: 700;
+    --h2-weight: 600;
+    --border: solid .1rem var(--color);
+}
+
+body {
+    background: var(--bg-color);
+
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "one one"
+    "two three"
+    "four three"
+    "five five";
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+}
+
+.center-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid div img {
+    width: 100%;
+}
+
+.one {
+    grid-area: one;
+    padding: 1rem;
+}
+
+.two {
+    grid-area: two;
+    padding: 1rem;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}

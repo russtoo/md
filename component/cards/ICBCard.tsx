@@ -13,6 +13,7 @@ export default function ICBCard() {
                 borderRadius: '1rem',
                 color: 'black',
                 padding: '0',
+                margin: '.5rem'
             }}
         >
            <Image

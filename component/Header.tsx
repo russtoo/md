@@ -1,3 +1,5 @@
+import { Button } from '@mui/material-next';
+
 export default function Header() {
     return (
         <header
@@ -17,9 +19,19 @@ export default function Header() {
                     url: ''
                 }
             ].map((nav => (
-                <a key={nav.id} href={nav.url} className="">
-                {nav.title}
-                </a>
+                <Button 
+                    key={nav.id} 
+                    href={nav.url} 
+                    className=""
+                    sx={{
+                        padding: '.5rem 1rem',
+                        color: 'black',
+                        fontFamily: 'monospace',
+                    }}
+                    variant='text'
+                >
+                    {nav.title}
+                </Button>
             )))}
             </nav>
         </header>

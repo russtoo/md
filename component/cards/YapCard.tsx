@@ -11,7 +11,7 @@ export default function YapCard() {
                 borderRadius: '1rem',
                 color: 'black',
                 padding: '1rem',
-                margin: '1rem .5rem',
+                margin: '.5rem',
                 display: 'block',
             }}
         >
@@ -24,14 +24,16 @@ export default function YapCard() {
             >
                 <h2
                     style={{
-                        fontSize: '1.2rem',
-                        fontWeight: '600'
+                        fontSize: '1.5rem',
+                        fontWeight: '700'
                     }}
                 >
                     how it started vs. how it's going
                 </h2>
                 <p
-                
+                    style={{
+                        fontSize: '1rem'
+                    }}
                 >
                     it be like that sometime. hear me out bro
                 </p>
@@ -39,6 +41,7 @@ export default function YapCard() {
             </div>
             <div
                 style={{
+                    
                     border: 'solid .1rem black',
                     borderRadius: '.5rem',
                     color: 'black',
@@ -47,6 +50,7 @@ export default function YapCard() {
                     position: 'relative',
                     fontFamily: 'monospace',
                     width: 'fit-content',
+                    fontSize: '.8rem',
                     backgroundColor: 'rgb(255, 235, 205)'
                 }}
             >
