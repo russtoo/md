@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export default function Yap() {
     const img = [
-        {src: '/assets/logo-full.png', alt: '', class: 'one'},
-        {src: '/assets/image.png', alt: '', class: 'two'},
+        {src: '/assets/logo-name.svg', alt: '', class: 'one'},
+        {src: '/assets/image.svg', alt: '', class: 'two'},
         {src: '/assets/mobile-view.jpg', alt: '', class: 'three'},
         {src: '', alt: '', class: 'four'},
         {src: '/assets/desktop-view.jpg', alt: '', class: 'five'}
@@ -86,6 +86,9 @@ export default function Yap() {
                     maxWidth: '700px'
                  }}
                 >
+                    i sourced inspiration from the interior design by georgie.designs using the monochrome tone of the walls as base of my bg
+                    sequenced with aesthetics pictures of the shop. i  preserved the theme font for titles and kept sans for text to keep a familiar font 
+                    with visitors. icons are easily accesible and familiar
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
                 </p>
                 <div className='center-grid'>
@@ -98,8 +101,9 @@ export default function Yap() {
                                     height={140}
                                     width={140}
                                     style={{
-                                        border: 'solid .1rem black',
+                                        border: 'solid .1rem hsl(36deg, 3%, 6%)',
                                         borderRadius: '.5rem',
+                                        padding: '1rem'
                                     }}
                                     priority
                                 />
