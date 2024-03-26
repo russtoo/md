@@ -4,6 +4,13 @@ import ArrowOutwardOutlinedIcon from '@mui/icons-material/ArrowOutwardOutlined';
 import Image from 'next/image';
 
 export default function Yap() {
+    const img = [
+        {src: '/assets/logo-full.png', alt: '', class: 'one'},
+        {src: '/assets/image.png', alt: '', class: 'two'},
+        {src: '/assets/mobile-view.jpg', alt: '', class: 'three'},
+        {src: '', alt: '', class: 'four'},
+        {src: '/assets/desktop-view.jpg', alt: '', class: 'five'}
+    ];
     return (
         <>
             <header
@@ -83,14 +90,8 @@ export default function Yap() {
                 </p>
                 <div className='center-grid'>
                     <div className='grid'>
-                        {[
-                            {src: '/assets/logo-full.png', alt: '', class: 'one'},
-                            {src: '/assets/image.png', alt: '', class: 'two'},
-                            {src: '/assets/mobile-view.jpg', alt: '', class: 'three'},
-                            {src: '', alt: '', class: 'four'},
-                            {src: '/assets/desktop-view.jpg', alt: '', class: 'five'}
-                        ].map((grid => (
-                            <div className={grid.class} key={index}>
+                        {img.map(((grid, img) => (
+                            <div className={grid.class} key={img}>
                                 <Image 
                                     src={grid.src}
                                     alt={grid.alt}
