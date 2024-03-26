@@ -84,15 +84,14 @@ export default function Yap() {
                 <div className='center-grid'>
                     <div className='grid'>
                         {[
-                            {src: '/assets/logo-full.png', alt: '', class: 'one', key: 'one'},
-                            {src: '/assets/image.png', alt: '', class: 'two', key: 'two'},
-                            {src: '/assets/mobile-view.jpg', alt: '', class: 'three', key: 'three'},
-                            {src: '', alt: '', class: 'four', key: 'four'},
-                            {src: '/assets/desktop-view.jpg', alt: '', class: 'five', key: 'five'}
+                            {src: '/assets/logo-full.png', alt: '', class: 'one'},
+                            {src: '/assets/image.png', alt: '', class: 'two'},
+                            {src: '/assets/mobile-view.jpg', alt: '', class: 'three'},
+                            {src: '', alt: '', class: 'four'},
+                            {src: '/assets/desktop-view.jpg', alt: '', class: 'five'}
                         ].map((grid => (
-                            <div className={grid.class}>
+                            <div className={grid.class} key={index}>
                                 <Image 
-                                    key={grid.key}
                                     src={grid.src}
                                     alt={grid.alt}
                                     height={140}
