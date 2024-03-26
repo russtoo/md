@@ -92,6 +92,7 @@ export default function Yap() {
                         ].map((grid => (
                             <div className={grid.class}>
                                 <Image 
+                                    key={grid.key}
                                     src={grid.src}
                                     alt={grid.alt}
                                     height={140}
